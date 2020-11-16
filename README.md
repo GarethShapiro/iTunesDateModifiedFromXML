@@ -10,16 +10,17 @@
 
  1. The source XML file as a relative path from this file.  Eg. ./data/oldiTunes.xml
  2. Optional. The specific folder to look for.  
-		For. eg.  
-		The old library might have had file locations like :
- 		/old/music/ambient		
 
-		The new library might have locations like :
-		/new/music/ambient
+ For. eg.  
+ The old library might have had file locations like :
+ /old/music/ambient		
 
-		Either music or ambient could be used as the second parameter depending on the required scope 
-	
-		If none is suppled then a folder of Tunes is implied and parameter 3 cannot be supplied.
+ The new library might have locations like :
+ /new/music/ambient
+
+ Either music or ambient could be used as the second parameter depending on the required scope 
+
+ If none is suppled then a folder of Tunes is implied and parameter 3 cannot be supplied.
 
  3.  Optional.  Test run.
 		Supply: True or False
