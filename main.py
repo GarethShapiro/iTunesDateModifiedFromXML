@@ -99,7 +99,10 @@ def updateModifiedDateIfNeeded(targetMap, testRun):
 		infoPrefix = ""
 
 		if testRun == False:
-			os.utime(unquoteLocation, (modTime, modTime))
+			try:
+				os.utime(unquoteLocation, (modTime, modTime))
+			except FileNotFoundError:
+				continue
 		else:
 			infoPrefix = "*** TestRun ** "
 
